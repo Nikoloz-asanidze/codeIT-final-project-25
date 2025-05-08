@@ -1,0 +1,24 @@
+/* SignOut.module.css */
+
+.button {
+    background-color: #0b82d1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 150px;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    background-color: #0032bb;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    transform: scale(0.98);
+  }
+  
