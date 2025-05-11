@@ -1,73 +1,72 @@
 .details {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  color: #222;
+  margin: 2rem auto 1rem;
+  margin-top: 5rem;
+  color: #333;
+  font-weight: bold;
 }
 
 .descript {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+  color: #555;
+  text-align: justify;
+}
+
+.image {
   text-align: center;
-  padding: 1.2rem;
-  line-height: 1.7;
-  word-break: break-word;
-  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  background-color: #fafafa;
 }
 
 .meta {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
   border-radius: 8px;
-  font-size: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  font-size: 1rem;
+  color: #444;
 }
 
 .meta p {
-  margin: 0;
-  font-weight: 500;
-  color: #111;
-}
-
-.meta strong {
-  font-weight: 600;
-  color: #555;
+  margin: 0.5rem 0;
 }
 
 .idText {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
-  color: #888;
   text-align: center;
+  margin-top: 1rem;
   font-style: italic;
+  color: #888;
 }
 
 .backButton {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 1rem;
-  transition: background-color 0.2s ease;
-}
-
-.backButton:hover {
-  background-color: #45a049;
-}
-
-
-.addButton {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    background-color: #0070f3; 
+    color: #fff; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .backbutton:hover {
+    background-color: #005bb5; 
+    transform: scale(1.05);
+  }

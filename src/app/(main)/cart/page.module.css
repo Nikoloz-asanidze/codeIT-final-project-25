@@ -1,7 +1,7 @@
 
 .container {
   max-width: 1000px;
-  margin: 100px auto 40px auto; /* 100px ზემოდან, რომ არ დაეჯახოს navbar-ს */
+  margin: 100px auto 40px auto; 
   padding: 20px;
   display: flex;
   flex-direction: column;

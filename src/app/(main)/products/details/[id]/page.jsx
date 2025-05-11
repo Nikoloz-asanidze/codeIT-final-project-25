@@ -11,6 +11,10 @@ async function Page({ params }) {
       <h5 className={styles.details}>Product Details</h5>
 
       <p className={styles.descript}>{product.description}</p>
+      <div className={styles.image}>
+      <img src={product.image} alt={product.title} />
+      </div>
+
 
       <div className={styles.meta}>
         <p><strong>price:</strong> {product.price} $</p>
