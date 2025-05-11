@@ -37,7 +37,7 @@
 
 .Button {
   margin: auto;
-  background-color: #1a84fd;
+  background-color: #031932;
   color: white;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -48,7 +48,7 @@
 }
 
 .Button:hover {
-  background-color: #005ac1;
+  background-color: #000000;
 }
 
 .countDisplay {
@@ -70,5 +70,5 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-align: right;
-  color: #0070f3;
+  color: #000000;
 }
