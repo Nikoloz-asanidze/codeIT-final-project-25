@@ -46,6 +46,13 @@ function Page() {
     }
   };
 
+
+  const getTotalPrice = () => {
+    return cartProducts.reduce((total, prod) => {
+      return total + prod.product.price * prod.count;
+    }, 0);
+  };
+
   return (
     <div className={styles.container}>
       {cartProducts?.map((prod) => (
@@ -57,19 +64,34 @@ function Page() {
             alt={prod.product.title}
           />
           <div>
-            <h4>{prod.product.title}</h4>
+            <h4 className={styles.title}>{prod.product.title}</h4> 
             <p>{prod.count} ცალი</p>
           </div>
           <div className={styles.buttonWrapper}>
-            <button onClick={() => handleAddOne(prod.product)} className={styles.Button}>
-              Add 1
+            <button 
+              onClick={() => handleAddOne(prod.product)} 
+              className={styles.Button}>
+              + 
             </button>
-            <button onClick={() => handleRemoveOne(prod.product)} className={styles.Button}>
-              Remove 1
+
+            <span className={styles.countDisplay}>{prod.count}</span>
+
+            <button 
+              onClick={() => handleRemoveOne(prod.product)} 
+              className={styles.Button}>
+              - 
             </button>
+          </div>
+          <div className={styles.price}>
+            <p>Total: ${prod.product.price * prod.count}</p> 
           </div>
         </div>
       ))}
+
+    
+      <div className={styles.totalPrice}>
+        <h3>Total Price: ${getTotalPrice().toFixed(2)}</h3>
+      </div>
     </div>
   );
 }
