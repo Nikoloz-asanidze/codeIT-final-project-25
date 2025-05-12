@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
-import AddTOCart from "@/components/AddToCart/AddTOCart";
+import AddTOCart from "@/components/AddToCart/AddToCart";
 
 async function Page({ params }) {
   const res = await fetch(`https://fakestoreapi.com/products/${params.id}`);
